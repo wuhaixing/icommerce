@@ -31,7 +31,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
                 <span className="rounded-full border border-gray-700 mr-2">
                   <Logo />
                 </span>
-                <span>ACME</span>
+                <span>iFitup</span>
               </a>
             </Link>
           </div>
@@ -40,21 +40,21 @@ const Footer: FC<Props> = ({ className, pages }) => {
               <li className="py-3 md:py-0 md:pb-4">
                 <Link href="/">
                   <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
-                    Home
+                    首页
                   </a>
                 </Link>
               </li>
               <li className="py-3 md:py-0 md:pb-4">
                 <Link href="/">
                   <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
-                    Careers
+                    照片
                   </a>
                 </Link>
               </li>
               <li className="py-3 md:py-0 md:pb-4">
                 <Link href="/blog">
                   <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
-                    Blog
+                    博客
                   </a>
                 </Link>
               </li>
@@ -97,10 +97,10 @@ const Footer: FC<Props> = ({ className, pages }) => {
         </div>
         <div className="py-12 flex flex-col md:flex-row justify-between items-center space-y-4">
           <div>
-            <span>&copy; 2020 ACME, Inc. All rights reserved.</span>
+            <span>&copy; 2021 iFitup, Inc. 保留所有权利</span>
           </div>
           <div className="flex items-center text-primary">
-            <span className="text-primary">Crafted by</span>
+            <span className="text-primary"> 感谢 </span>
             <a
               rel="noopener"
               href="https://vercel.com"

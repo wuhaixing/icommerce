@@ -109,7 +109,7 @@ export default function Search({
                 >
                   {activeCategory?.name
                     ? `Category: ${activeCategory?.name}`
-                    : 'All Categories'}
+                    : '全部品类'}
                   <svg
                     className="-mr-1 ml-2 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +156,7 @@ export default function Search({
                             'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
                           }
                         >
-                          All Categories
+                          全部品类
                         </a>
                       </Link>
                     </li>
@@ -208,7 +208,7 @@ export default function Search({
                 >
                   {activeBrand?.name
                     ? `Design: ${activeBrand?.name}`
-                    : 'All Designs'}
+                    : '全部品牌'}
                   <svg
                     className="-mr-1 ml-2 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -258,7 +258,7 @@ export default function Search({
                             'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
                           }
                         >
-                          All Designers
+                          全部品牌
                         </a>
                       </Link>
                     </li>
@@ -338,7 +338,7 @@ export default function Search({
                   Searching for: "<strong>{q}</strong>"
                 </>
               ) : (
-                <>Searching...</>
+                <>搜索...</>
               )}
             </div>
           )}
@@ -427,7 +427,7 @@ export default function Search({
                             'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
                           }
                         >
-                          Relevance
+                          相关产品
                         </a>
                       </Link>
                     </li>

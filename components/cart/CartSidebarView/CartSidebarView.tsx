@@ -60,7 +60,7 @@ const CartSidebarView: FC = () => {
             <Bag className="absolute" />
           </span>
           <h2 className="pt-6 text-2xl font-bold tracking-wide text-center">
-            Your cart is empty
+            购物车是空的
           </h2>
           <p className="text-accents-3 px-10 text-center pt-2">
             Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
@@ -81,9 +81,7 @@ const CartSidebarView: FC = () => {
           <span className="border border-white rounded-full flex items-center justify-center w-16 h-16">
             <Check />
           </span>
-          <h2 className="pt-6 text-xl font-light text-center">
-            Thank you for your order.
-          </h2>
+          <h2 className="pt-6 text-xl font-light text-center">感谢下单</h2>
         </div>
       ) : (
         <>
@@ -93,7 +91,7 @@ const CartSidebarView: FC = () => {
                 className="pt-1 pb-4 text-2xl leading-7 font-bold text-base tracking-wide cursor-pointer inline-block"
                 onClick={handleClose}
               >
-                My Cart
+                我的购物车
               </h2>
             </Link>
             <ul className="py-6 space-y-6 sm:py-0 sm:space-y-0 sm:divide-y sm:divide-accents-3 border-t border-accents-3">
@@ -111,25 +109,25 @@ const CartSidebarView: FC = () => {
             <div className="border-t border-accents-3">
               <ul className="py-3">
                 <li className="flex justify-between py-1">
-                  <span>Subtotal</span>
+                  <span>小计</span>
                   <span>{subTotal}</span>
                 </li>
                 <li className="flex justify-between py-1">
-                  <span>Taxes</span>
+                  <span>税费</span>
                   <span>Calculated at checkout</span>
                 </li>
                 <li className="flex justify-between py-1">
-                  <span>Estimated Shipping</span>
-                  <span className="font-bold tracking-wide">FREE</span>
+                  <span>运费</span>
+                  <span className="font-bold tracking-wide">免费</span>
                 </li>
               </ul>
               <div className="flex justify-between border-t border-accents-3 py-3 font-bold mb-10">
-                <span>Total</span>
+                <span>总额</span>
                 <span>{total}</span>
               </div>
             </div>
             <Button href="/checkout" Component="a" width="100%">
-              Proceed to Checkout
+              下单
             </Button>
           </div>
         </>

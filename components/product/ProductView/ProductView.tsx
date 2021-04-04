@@ -145,7 +145,7 @@ const ProductView: FC<Props> = ({ product }) => {
               loading={loading}
               disabled={!variant && product.options.length > 0}
             >
-              Add to Cart
+              放入购物车
             </Button>
           </div>
         </div>

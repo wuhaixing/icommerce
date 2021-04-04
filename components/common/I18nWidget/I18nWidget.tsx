@@ -28,6 +28,13 @@ const LOCALES_MAP: Record<string, LOCALE_DATA> = {
       alt: 'US Flag',
     },
   },
+  'zh-CN': {
+    name: '中文简体',
+    img: {
+      filename: 'flag-zh-cn.svg',
+      alt: '中国国旗',
+    },
+  },
 }
 
 const I18nWidget: FC = () => {
@@ -35,7 +42,7 @@ const I18nWidget: FC = () => {
   const {
     locale,
     locales,
-    defaultLocale = 'en-US',
+    defaultLocale = 'zh-CN',
     asPath: currentPath,
   } = useRouter()
 

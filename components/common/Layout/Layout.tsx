@@ -57,7 +57,7 @@ const Layout: FC<Props> = ({
     modalView,
   } = useUI()
   const { acceptedCookies, onAcceptCookies } = useAcceptCookies()
-  const { locale = 'en-US' } = useRouter()
+  const { locale = 'zh-CN' } = useRouter()
   return (
     <CommerceProvider locale={locale}>
       <div className={cn(s.root)}>
@@ -76,11 +76,11 @@ const Layout: FC<Props> = ({
         </Sidebar>
 
         <FeatureBar
-          title="This site uses cookies to improve your experience. By clicking, you agree to our Privacy Policy."
+          title="本站需用cookies提升您的体验，点击下面的按钮表明您已接受我们的隐私协议。"
           hide={acceptedCookies}
           action={
             <Button className="mx-5" onClick={() => onAcceptCookies()}>
-              Accept cookies
+              接受cookies
             </Button>
           }
         />

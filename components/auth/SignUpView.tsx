@@ -72,17 +72,16 @@ const SignUpView: FC<Props> = () => {
         {message && (
           <div className="text-red border border-red p-3">{message}</div>
         )}
-        <Input placeholder="First Name" onChange={setFirstName} />
-        <Input placeholder="Last Name" onChange={setLastName} />
+        <Input placeholder="姓氏" onChange={setFirstName} />
+        <Input placeholder="名字" onChange={setLastName} />
         <Input type="email" placeholder="Email" onChange={setEmail} />
-        <Input type="password" placeholder="Password" onChange={setPassword} />
+        <Input type="密码" placeholder="Password" onChange={setPassword} />
         <span className="text-accents-8">
           <span className="inline-block align-middle ">
             <Info width="15" height="15" />
           </span>{' '}
           <span className="leading-6 text-sm">
-            <strong>Info</strong>: Passwords must be longer than 7 chars and
-            include numbers.{' '}
+            <strong>提示</strong>: 密码必须7位以上，包含字母和数字。{' '}
           </span>
         </span>
         <div className="pt-2 w-full flex flex-col">
@@ -92,18 +91,18 @@ const SignUpView: FC<Props> = () => {
             loading={loading}
             disabled={disabled}
           >
-            Sign Up
+            注册
           </Button>
         </div>
 
         <span className="pt-1 text-center text-sm">
-          <span className="text-accents-7">Do you have an account?</span>
+          <span className="text-accents-7">已有账号？</span>
           {` `}
           <a
             className="text-accent-9 font-bold hover:underline cursor-pointer"
             onClick={() => setModalView('LOGIN_VIEW')}
           >
-            Log In
+            登录
           </a>
         </span>
       </div>

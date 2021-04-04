@@ -24,12 +24,12 @@ const Searchbar: FC<Props> = ({ className, id = 'search' }) => {
         )}
       >
         <label className="hidden" htmlFor={id}>
-          Search
+          搜索
         </label>
         <input
           id={id}
           className={s.input}
-          placeholder="Search for products..."
+          placeholder="搜索产品..."
           defaultValue={router.query.q}
           onKeyUp={(e) => {
             e.preventDefault()

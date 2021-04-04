@@ -11,8 +11,8 @@ const isShopify = provider === 'shopify'
 module.exports = withCommerceConfig({
   commerce,
   i18n: {
-    locales: ['en-US', 'es'],
-    defaultLocale: 'en-US',
+    locales: ['zh-CN', 'en-US', 'es'],
+    defaultLocale: 'zh-CN',
   },
   rewrites() {
     return [

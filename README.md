@@ -55,7 +55,7 @@ Next.js Commerce provides a set of utilities and functions to create new provide
 - `customer`
   - useCustomer
   - getCustomerId
-  - getCustomerWistlist
+  - getCustomerWishlist
 - `cart`
   - useCart
   - useAddItem

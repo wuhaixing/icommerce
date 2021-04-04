@@ -22,15 +22,15 @@ interface DropdownMenuProps {
 
 const LINKS = [
   {
-    name: 'My Orders',
+    name: '订单',
     href: '/orders',
   },
   {
-    name: 'My Profile',
+    name: '账户信息',
     href: '/profile',
   },
   {
-    name: 'My Cart',
+    name: '购物车',
     href: '/cart',
   },
 ]
@@ -112,7 +112,7 @@ const DropdownMenu: FC<DropdownMenuProps> = ({ open = false }) => {
                 className={cn(s.link, 'border-t border-accents-2 mt-4')}
                 onClick={() => logout()}
               >
-                Logout
+                退出
               </a>
             </li>
           </ul>

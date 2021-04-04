@@ -71,7 +71,7 @@ const LoginView: FC<Props> = () => {
               className="text-accent-9 inline font-bold hover:underline cursor-pointer"
               onClick={() => setModalView('FORGOT_VIEW')}
             >
-              forgot your password?
+              忘了密码?
             </a>
           </div>
         )}
@@ -84,7 +84,7 @@ const LoginView: FC<Props> = () => {
           loading={loading}
           disabled={disabled}
         >
-          Log In
+          登录
         </Button>
         <div className="pt-1 text-center text-sm">
           <span className="text-accents-7">Don't have an account?</span>
@@ -93,7 +93,7 @@ const LoginView: FC<Props> = () => {
             className="text-accent-9 font-bold hover:underline cursor-pointer"
             onClick={() => setModalView('SIGNUP_VIEW')}
           >
-            Sign Up
+            注册
           </a>
         </div>
       </div>

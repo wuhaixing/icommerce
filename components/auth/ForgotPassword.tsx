@@ -56,7 +56,7 @@ const ForgotPassword: FC<Props> = () => {
             loading={loading}
             disabled={disabled}
           >
-            Recover Password
+            找回密码
           </Button>
         </div>
 
@@ -67,7 +67,7 @@ const ForgotPassword: FC<Props> = () => {
             className="text-accent-9 font-bold hover:underline cursor-pointer"
             onClick={() => setModalView('LOGIN_VIEW')}
           >
-            Log In
+            登录
           </a>
         </span>
       </div>
